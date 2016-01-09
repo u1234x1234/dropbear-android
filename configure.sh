@@ -20,7 +20,7 @@ export LD=${CROSS_PATH}-ld
 export RANLIB=${CROSS_PATH}-ranlib
 
 
-export CFLAGS="${CFLAGS} --sysroot=${SYSROOT} -I${SYSROOT}/usr/include -I${ANDROID_PREFIX}/include -DDISABLE_UTMP -DDISABLE_WTMP -fPIE"
+export CFLAGS="${CFLAGS} --sysroot=${SYSROOT} -I${SYSROOT}/usr/include -I${ANDROID_PREFIX}/include -DDISABLE_UTMP -DDISABLE_WTMP -DHAVE_GETPASS -fPIE"
 export CPPFLAGS="${CFLAGS} -fPIE"
 export LDFLAGS="${LDFLAGS} --sysroot=${SYSROOT} -L${SYSROOT}/usr/lib -L${ANDROID_PREFIX}/lib -fPIE -pie"
 
