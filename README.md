@@ -1,5 +1,6 @@
 # dropbear-android
-Cross compiling dropbear for android
+Cross compiling dropbear for android  
+There's no "getpass" function on android, so it uses dropbear fork https://github.com/u1234x1234/dropbear (only difference is  ignoring getpass function). Password can be obtained by the environment variable "DROPBEAR_PASSWORD" for a password authentication.
 
 # Usage:
 ./configure.sh
